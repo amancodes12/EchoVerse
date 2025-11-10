@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="InspirePulse - Get fresh motivation and wisdom with every visit. A real-time quote generator for daily inspiration.">
+    <title>InspirePulse - Daily Inspiration & Motivation</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background -->
+    <div class="bg-container">
+        <div class="bg-gradient" id="bgGradient"></div>
+        <div class="shapes-layer" id="shapesLayer"></div>
+        <div class="particles-layer" id="particlesLayer"></div>
+    </div>
+    
+    <!-- Content -->
+    <div class="content-layer">
+        <div class="container-fluid">
+            <!-- Header -->
+            <header>
+                <h1 class="logo">
+                    <span class="logo-icon" id="logoIcon">🌅</span>
+                    <span>InspirePulse</span>
+                </h1>
+                <p class="tagline">Fresh motivation & wisdom, delivered with style</p>
+            </header>
+            
+            <!-- Categories -->
+            <div class="category-section">
+                <div class="category-grid">
+                    <button class="category-pill active" data-category="all">✨ All</button>
+                    <button class="category-pill" data-category="motivation">🔥 Motivation</button>
+                    <button class="category-pill" data-category="wisdom">🧠 Wisdom</button>
+                    <button class="category-pill" data-category="love">💖 Love</button>
+                    <button class="category-pill" data-category="success">🏆 Success</button>
+                    <button class="category-pill" data-category="life">🌱 Life</button>
+                    <button class="category-pill" data-category="mythology">🕉️ Mythology</button>
+                </div>
+            </div>
+            
+            <!-- Quote -->
+            <div class="quote-section">
+                <div class="quote-card" id="quoteCard">
+                    <div class="quote-decoration left">"</div>
+                    <div class="quote-decoration right">"</div>
+                    <div class="quote-text" id="quoteText">Click "New Quote" to begin your journey of inspiration...</div>
+                    <div class="quote-author" id="quoteAuthor">— InspirePulse</div>
+                    <span class="quote-category-badge" id="quoteCategoryBadge">START</span>
+                </div>
+            </div>
+            
+            <!-- Actions -->
+            <div class="actions">
+                <button class="action-btn btn-primary-action" id="newQuoteBtn">
+                    <span>✨</span>
+                    <span>New Quote</span>
+                </button>
+                <button class="action-btn btn-secondary-action" id="saveBtn">
+                    <span>💖</span>
+                    <span>Save</span>
+                </button>
+                <button class="action-btn btn-secondary-action" id="shareBtn">
+                    <span>📤</span>
+                    <span>Share</span>
+                </button>
+            </div>
+            
+            <!-- Favorites -->
+            <div class="favorites-section">
+                <div class="favorites-container">
+                    <h2 class="favorites-title">
+                        <span>💖</span>
+                        <span>Your Saved Inspirations</span>
+                    </h2>
+                    <div id="favoritesList">
+                        <div class="empty-state">
+                            <div class="empty-state-icon">📚</div>
+                            <p>No favorites yet. Start collecting quotes that speak to your soul!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <p>Crafted with ❤️ by <a href="https://github.com/yourusername" target="_blank">Aman</a></p>
+            <a href="https://github.com/yourusername/inspirepulse" target="_blank">GitHub</a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
