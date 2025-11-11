@@ -463,7 +463,7 @@
             }
         }
         
-        /* Responsive */
+        /* Responsiveness */
         @media (max-width: 768px) {
             .logo {
                 font-size: 2.2rem;
@@ -543,3 +543,4 @@
             }
 
         }
+
