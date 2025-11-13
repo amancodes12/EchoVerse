@@ -246,7 +246,7 @@
             }
         }
         
-        // Category selection
+        // All Category selection
         categoryPills.forEach(pill => {
             pill.addEventListener('click', () => {
                 categoryPills.forEach(p => p.classList.remove('active'));
@@ -288,5 +288,6 @@
         alert('✅ Quote removed from favorites!');
     }
 }
+
 
 
