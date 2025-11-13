@@ -222,7 +222,7 @@
             }
         }
         
-        // Share quote
+        // Share quote Not started yet
         function shareQuote() {
             if (!currentQuote) {
                 alert('⚠️ Please generate a quote first!');
@@ -288,4 +288,5 @@
         alert('✅ Quote removed from favorites!');
     }
 }
+
 
